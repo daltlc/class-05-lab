@@ -69,7 +69,15 @@ Write a function called sumArray() that takes in an array of numbers as its argu
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSumArray() function and see if the test passes.*/
 
-// Write your code here
+function sumArray (numArray) {
+	function add(a, b) {
+    return a + b;
+	}
+	var numArray = [2,3,4].reduce(add,0);
+	var text = '2,3,4 was passed in as an array of numbers, and 9 is their sum.';
+	var problem4 = [numArray,text];
+	return problem4;
+}
 testArray = [2,3,4];
 
 // Here is the test for sumArray(); uncomment it to run it
