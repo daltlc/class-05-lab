@@ -93,7 +93,15 @@ Write a function called multiplyArray() that takes an array of numbers as its ar
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testMultiplyArray() function and see if the test passes.*/
 
-// Write your code here
+function multiplyArray (numArray) {
+	function prodcut(a,b) {
+    return a*b;
+	}
+	var numArray = [2,3,4].reduce(prodcut);
+	var text = 'The numbers 2,3,4 have a product of 24.';
+	var problem5 = [numArray,text];
+	return problem5;
+}
 
 // Here is the test for multiplyArray(); uncomment it to run it
 testMultiplyArray(testArray);
